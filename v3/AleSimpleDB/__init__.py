@@ -1,3 +1,7 @@
+# allelleo
+# python 3.10
+# vk, tg, inst - @allelleo
+
 import sqlite3
 
 def Connect(path="database.db"):
