@@ -1,3 +1,7 @@
+# created by allelleo
+# inst,vk,tg : @allelleo
+# python 3.10
+
 import AleSimpleDB
 
 connection, cursor = AleSimpleDB.Connect(path = "usr.db")
@@ -23,5 +27,5 @@ AleSimpleDB.create_table(connection, cursor, data = {
 print(AleSimpleDB.get_all_writes(cursor = cursor, tableName="users"))
 print(AleSimpleDB.get_writes_by(cursor=cursor, tableName="users", param="name", query='5'))
 print(AleSimpleDB.get_last(cursor = cursor, tableName="users"))
-#print(AleSimpleDB.new_write(connection = connection, cursor = cursor, tableName="users", data=["q", 'w', 'e', 'r3']))
+print(AleSimpleDB.new_write(connection = connection, cursor = cursor, tableName="users", data=["q", 'w', 'e', 'r3']))
 print(AleSimpleDB.get_last_by(cursor = cursor, tableName="users", param="name", query="q"))
